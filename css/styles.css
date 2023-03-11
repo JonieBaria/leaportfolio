@@ -1,0 +1,74 @@
+body {
+    font-family: "Montserrat";
+}
+
+#title {
+    margin: 35px;
+
+}
+
+.navbar {
+   border-radius: 10px;
+}
+
+.b-name {
+    padding-left: 10px;
+    font-weight: 700;
+}
+
+h1 {
+    padding: 35px;
+    font-size: 3rem;
+    font-weight: 900;
+}
+
+h3 {
+   font-weight: 700;
+}
+
+.btn-title {
+    margin-left: 35px;
+}
+
+
+
+#features {
+    border-radius: 10px;
+    margin: 35px;
+    background-color: #B9D9EB;
+}
+
+.traits {
+    padding: 50px;
+
+}
+
+.traits-pic {
+    margin-bottom: 10px;
+}
+
+.grow {
+transition: 1s ease;
+}
+
+.grow img:hover {
+-webkit-transform: scale(1.2);
+-ms-transform: scale(1.2);
+transform: scale(1.2);
+transition: 1s ease;
+}
+
+.f-p {
+    padding: 5px 30px;
+    font-weight: 200;
+}
+
+
+#gallery {
+    width: 80%;
+    margin: auto;
+    padding: 10px 15px;
+    text-align: center;
+    align: center;
+
+}
