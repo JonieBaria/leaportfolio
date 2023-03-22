@@ -10,7 +10,7 @@ app.get("/", function(req, res){
     res.send("Hello");
 });
 
-app.get("/contact", function(req, res){
+app.get("/home", function(req, res){
     res.sendFile(__dirname + "/index.html")
 
 });
