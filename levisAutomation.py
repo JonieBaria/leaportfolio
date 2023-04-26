@@ -1,17 +1,19 @@
 import os
 import shutil
 
-EXTRACTEDBARCODEFILES = []
+EXTRACTED_UNDERSCORES = []
 
-folder = r"C:\Users\Owner\Desktop\Testfolderbarcodesource"
+folder = r"C:\Users\BARIAJB\Documents\Copy_underscore"
 
-source = r"C:\Users\Owner\Desktop\Testfolderbarcodesource\{}"
+source = r"C:\Users\BARIAJB\Documents\Copy_underscore\{}"
 
-destinationfolder = r"C:\Users\Owner\Desktop\Barcodefiles_Test"
+destinationfolder = r"C:\Users\BARIAJB\Documents\copy_result_1"
+
+
 
 for f in os.listdir(folder):
-    if f.endswith('BARCODE.jpg') or f.endswith('barcode.jpg') or f.endswith('Barcode.jpg'):
-        EXTRACTEDBARCODEFILES.append(f)
-        shutil.move(source.format(f), destinationfolder)
+    if f.endswith('_1.jpg'):
+        EXTRACTED_UNDERSCORES.append(f)
+        shutil.copy(source.format(f), destinationfolder)
 
-print("Number of extracted barcode files: ", len(EXTRACTEDBARCODEFILES))
+print("Number of copied _1 files: ", len(EXTRACTED_UNDERSCORES))
